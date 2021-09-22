@@ -1,0 +1,258 @@
+body {
+  background: #000;
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.logoStrip {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 3%;
+}
+
+.logoStrip img {
+  height: 60px;
+  margin: auto;
+}
+
+.logoStrip img:nth-child(1) {
+  margin-left: 0;
+}
+
+.logoStrip img:nth-child(2) {
+  margin-right: 60px;
+  height: 45px;
+  opacity: 0;
+}
+
+.logoStrip img:nth-child(3) {
+  margin: auto 0;
+  height: 20px;
+}
+
+#navBars {
+  height: 16px;
+}
+
+#navBars,
+#navClose {
+  cursor: pointer;
+}
+
+.navContent {
+  position: absolute;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 1;
+  background: #000;
+  top: 0;
+}
+
+.navbarAppear .logoStrip img:nth-child(2) {
+  opacity: 1;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 5vh auto;
+}
+
+.navLinkColumn {
+  display: flex;
+  flex-direction: column;
+  max-width: 18%;
+}
+
+.navLinkColumn a:hover {
+  color: #ed1c25;
+}
+
+.navLinkColumn h3 a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Lora;
+  font-weight: normal;
+  font-size: 28px;
+  transition: 0.1s;
+}
+
+.navLinkColumn ul {
+  list-style-type: none;
+  margin-top: 15px;
+}
+
+.navLinkColumn ul li {
+  margin: 12px 0;
+}
+
+.navLinkColumn ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  transition: 0.1s;
+}
+
+.navContact {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.navContact h2 a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Lora;
+  font-weight: normal;
+  font-size: 28px;
+  transition: 0.1s;
+}
+
+.navContact p {
+  color: #fff;
+  font-size: 14px;
+  width: 20%;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+
+.navContact form {
+  display: flex;
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+}
+
+.navContact form input {
+  width: 20%;
+  background: #000;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  outline: none;
+  color: #fff;
+  padding: 6px 0;
+}
+
+.navContact form input::placeholder {
+  color: #aaa;
+}
+
+.navContact form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 10%;
+  font-size: 16px;
+  color: #ed1c25;
+  background: #000;
+  margin-left: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.navContact form button img {
+  height: 16px;
+  margin-left: 15px;
+}
+
+@media (max-width: 1080px) {
+  .navContact p {
+    width: 40%;
+  }
+
+  .navContact form input {
+    width: 40%;
+  }
+}
+
+@media (max-width: 960px) {
+  .navLinks {
+    flex-direction: column;
+  }
+
+  .navLinkColumn {
+    max-width: 90%;
+  }
+
+  .navLinkColumn:not(:last-child) {
+    margin-bottom: 4vh;
+  }
+
+  .navLinkColumn ul {
+    margin-left: 2vw;
+  }
+
+  .navContact p {
+    width: 60%;
+  }
+
+  .navContact form {
+    flex-direction: column;
+  }
+
+  .navContact form input {
+    width: 60%;
+  }
+
+  .navContact form button {
+    margin-top: 3vh;
+    margin-left: auto;
+    width: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .logoStrip {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+  }
+
+  .logoStrip img {
+    height: 50px;
+    margin: auto;
+  }
+
+  .logoStrip img:nth-child(2) {
+    margin-right: 20px;
+    height: 30px;
+  }
+
+  .logoStrip img:nth-child(3) {
+    height: 15px;
+  }
+
+  #navBars {
+    height: 12px;
+  }
+
+  .navLinkColumn {
+    max-width: 100%;
+  }
+
+  .navLinkColumn h3 a {
+    font-size: 22px;
+  }
+
+  .navLinkColumn ul {
+    margin-left: 5vw;
+    margin-top: 10px;
+  }
+
+  .navContact p,
+  .navContact form input {
+    width: 100%;
+  }
+}
+
+.navbarDisappear {
+  display: none;
+}
+
+.navbarAppear {
+  display: flex;
+  flex-direction: column;
+}

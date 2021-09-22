@@ -1,0 +1,15 @@
+<svg width="49.927" height="20.572" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="602" width="802" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g transform="rotate(-180 24.96351432800293,10.285999298095703) " id="Long_Arrow">
+   <path fill-rule="evenodd" stroke-width="2" stroke-miterlimit="22.926" stroke="#ed1c24" fill="none" d="m49.92703,10.343a10.343,10.343 0 0 1 -10.343,-10.343" id="Path_1"/>
+   <path fill-rule="evenodd" stroke-width="2" stroke-miterlimit="22.926" stroke="#ed1c24" fill="none" d="m49.92703,10.229a10.343,10.343 0 0 0 -10.343,10.343" id="Path_2"/>
+   <line y1="10.286" x2="0" y2="10.286" stroke-width="2" stroke-miterlimit="22.926" stroke="#ed1c24" fill="none" x1="49.927" id="Line_1"/>
+  </g>
+ </g>
+</svg>

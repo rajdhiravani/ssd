@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
+
+      ga("create", "UA-190588626-1", "auto");
+      ga("send", "pageview");
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Ads: 420037031 -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-420037031"
+    ></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-420037031");
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "482052489844969");
+      fbq("track", "PageView");
+    </script>
+
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=482052489844969&ev=PageView&noscript=1"
+    /></noscript>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./navbar.css" />
+    <title>Somaiya School of Design | Navbar</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="logoStrip">
+        <img src="../img/ssd logo new.png" alt="riidl Academy" />
+        <img src="../img/STrust.png" alt="Somaiya Trust" />
+        <img src="../img/hamburger.svg" alt="Hamburger" id="navBars" />
+      </div>
+      <div class="navContent navbarDisappear" id="navContent">
+        <div class="logoStrip">
+          <img src="../img/ssd logo new.png" alt="riidl Academy" />
+          <img src="../img/STrust.png" alt="Somaiya Trust" />
+          <img src="../img/close.svg" alt="Close" id="navClose" />
+        </div>
+        <div class="navLinks">
+          <div class="navLinkColumn">
+            <h3><a href="">About School of Design</a></h3>
+            <ul>
+              <li><a href="">Introduction</a></li>
+              <li><a href="">Vision and Mission</a></li>
+              <li><a href="">Organization Structure</a></li>
+              <li><a href="">Academic Advisory Board</a></li>
+            </ul>
+          </div>
+          <div class="navLinkColumn">
+            <h3><a href="">Bachelor of Design Academics</a></h3>
+            <ul>
+              <li><a href="">Introduction to BDes program</a></li>
+              <li>
+                <a href="">Curriculum Framework</a>
+              </li>
+              <li><a href="">4 year journey</a></li>
+              <li><a href="">Block plan</a></li>
+              <li><a href="">Education value system</a></li>
+              <li><a href="">Program Outcomes</a></li>
+              <li><a href="">Our faculty</a></li>
+              <li><a href="">Our labs</a></li>
+              <li><a href="">Board of Studies</a></li>
+            </ul>
+          </div>
+          <div class="navLinkColumn">
+            <h3><a href="">Collaborations</a></h3>
+            <ul>
+              <li><a href="">Our Partners</a></li>
+              <li><a href="">Exchange program</a></li>
+              <li><a href="">Grants</a></li>
+            </ul>
+          </div>
+          <div class="navLinkColumn">
+            <h3><a href="">Life on campus and beyond</a></h3>
+            <ul>
+              <li><a href="">Student life</a></li>
+              <li><a href="">Life after Bachelor of Design</a></li>
+            </ul>
+          </div>
+          <div class="navLinkColumn">
+            <h3><a href="">Admissions</a></h3>
+            <ul>
+              <li><a href="">Eligibility & Application steps</a></li>
+              <li><a href="">Fees + Aid</a></li>
+              <li><a href="">Admission Team</a></li>
+              <li><a href="">Virtual Tour</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navContact">
+          <h2><a href="">Contact Us</a></h2>
+          <p>
+            Subscribe to our mailing list to keep up with the events and
+            important dates.
+          </p>
+          <form action="">
+            <input type="text" placeholder="Enter your Email Address" />
+            <button>Sign Up <img src="../img/arrow.svg" alt="Arrow" /></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      const bars = document.getElementById("navOpenIcon");
+      const close = document.getElementById("navCloseIcon");
+      const navbar = document.getElementById("navContent");
+      const nav = document.getElementById("navbar");
+
+      bars.onclick = function () {
+        navbar.classList.remove("navbarDisappear");
+        navbar.classList.add("navbarAppear");
+        nav.style.height = "100vh";
+      };
+
+      close.onclick = function () {
+        navbar.classList.remove("navbarAppear");
+        navbar.classList.add("navbarDisappear");
+        nav.style.height = "100px";
+      };
+    </script>
+  </body>
+</html>
