@@ -122,7 +122,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="somaiya School of Design is leading the way to reinvent Design education through its 4 year undergraduate program - Bachelor of Design in sustainable Product Design."
+      content="Somaiya School of Design is leading the way to reinvent Design education through its 4 year undergraduate program - Bachelor of Design in sustainable Product Design."
     />
     <meta
       name="keywords"
