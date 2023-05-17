@@ -1,0 +1,263 @@
+.contactContainer {
+  min-height: 100vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  position: relative;
+  display: flex;
+  padding-left: 3vw;
+}
+
+.contactContainer .leftStrip {
+  left: -5vw;
+}
+
+.contactContainer .bottomStrip {
+  left: -5vw;
+  width: 15vw;
+}
+
+.contactContainer .bottomSecondStrip {
+  left: 10vw;
+  width: 5vw;
+}
+
+.contactContainer h1 {
+  font-size: 28px;
+  font-family: Marcellus;
+  font-weight: 400;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 15vh;
+}
+
+.contactContent:nth-child(5) {
+  margin-top: 23vh;
+}
+
+.contactContent:nth-child(5) h1:nth-child(3) {
+  margin-top: 8vh;
+}
+
+.contactContent button {
+  height: 50px;
+  width: 40%;
+  background: #000;
+  margin-top: 3vh;
+  border: none;
+  color: #fff;
+  outline: none;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.contactContent button:hover {
+  background: #333;
+}
+
+.contactContent .nextLinks {
+  margin: 0;
+  margin-top: 4vh;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactDetails p {
+  line-height: 1.4;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.contactDetails p:first-child {
+  width: 60%;
+}
+
+.contactDetails a {
+  margin: 8px 0;
+  color: #ed1c25;
+  text-decoration: none;
+}
+
+.contactDetails a:hover {
+  text-decoration: underline;
+}
+
+.contactContainer form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 40%;
+}
+
+.contactContainer form input,
+.postSubmitBtns button {
+  max-height: 55px;
+  min-height: 55px;
+  padding: 8px;
+  flex: 1;
+  color: #000;
+  border: 1px solid #aaa;
+}
+
+.contactContainer form textarea {
+  height: 150px;
+  padding: 8px;
+  color: #000;
+  border: 1px solid #aaa;
+}
+
+.contactContainer form input::placeholder,
+.contactContainer form textarea::placeholder {
+  font-size: 12px;
+  color: #666;
+}
+
+.contactContainer form input[type="submit"] {
+  width: 50%;
+  margin-left: auto;
+  background: #000;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.contactContainer form input[type="submit"]:hover {
+  background: #333;
+}
+
+.nameRow {
+  display: flex;
+  width: 100%;
+}
+
+.postSubmitBtns {
+  display: none;
+}
+
+.postSubmitBtns button {
+  background: #ed1c25;
+  border: 1px solid #000;
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.postSubmitBtns button:not(:disabled):hover {
+  background: #dd0c15;
+}
+
+.postSubmitBtns button:disabled {
+  background: #000;
+}
+
+@media (max-width: 960px) {
+  .contactContainer {
+    flex-direction: column;
+    padding-bottom: 24vh;
+  }
+
+  .contactContainer h1 {
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .contactContent {
+    width: 60%;
+  }
+
+  .contactContent:nth-child(5) {
+    margin-top: 0;
+  }
+
+  .contactContent .nextLinks {
+    margin-top: 3vh;
+  }
+
+  .contactDetails {
+    margin-bottom: 5vh;
+  }
+
+  .contactContainer form {
+    width: 80%;
+    margin-bottom: 20vh;
+  }
+}
+
+@media (max-width: 560px) {
+  .contactContainer {
+    padding-left: 0;
+  }
+
+  .contactContainer .leftStrip {
+    height: 15vh;
+    bottom: 0;
+    width: 30px;
+    top: auto;
+  }
+
+  .contactContainer .bottomStrip {
+    width: 40vw;
+  }
+
+  .contactContainer .bottomSecondStrip {
+    left: 35vw;
+    width: 20vw;
+  }
+
+  .contactContainer h1 {
+    font-size: 20px;
+  }
+
+  .contactContent {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .contactContent:nth-child(5) h1:nth-child(3) {
+    margin-top: 5vh;
+  }
+
+  .contactContent .nextLinks {
+    margin-top: 2vh;
+  }
+
+  .contactContent .currentPageTitle {
+    margin-top: 120px;
+  }
+
+  .contactDetails {
+    margin-bottom: 3vh;
+  }
+
+  .contactDetails p:first-child {
+    width: 100%;
+  }
+
+  .contactContainer form {
+    width: 100%;
+  }
+
+  .contactContainer form input[type="submit"] {
+    width: 100%;
+  }
+
+  .nameRow {
+    flex-direction: column;
+  }
+
+  .postSubmitBtns {
+    flex-direction: column;
+  }
+}

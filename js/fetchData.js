@@ -38,6 +38,12 @@ const getAirtableData = async () => {
   updateAdvBoard();
   updateAdvBoardModal();
   updateFaculty();
+  updateVisitingFaculty();
+  updateGalleryInternships();
+  updateGalleryVisits();
+  updateGalleryParallelSkills();
+  updateGallerySsdRiidl();
+  updateGalleryPartnerships();
   updateBoardOfStudies();
   updatePartners();
   updateExchangePrograms();
@@ -213,6 +219,128 @@ const updateFaculty = async () => {
   const facultyRow = document.getElementsByClassName("facultyRow")[1];
   facultyRow.innerHTML = template;
 };
+
+
+const updateVisitingFaculty = async () => {
+  faculty = await getRecords("Our Visiting Faculty");
+  faculty = sortByOrder(faculty);
+  let template = "";
+  faculty.forEach((facultyPerson, index) => {
+    template += `
+    <div class="facultyBox">
+      <div
+        class="facultyPic"
+        style="background: url('${facultyPerson.Photo[0].url}') center/cover"
+      ></div>
+      <h2>${facultyPerson.Name}</h2>
+      <p>${facultyPerson.Designation}</p>
+    </div>
+    `;
+  });
+  const facultyRow = document.getElementsByClassName("facultyRow")[2];
+  facultyRow.innerHTML = template;
+};
+
+
+const updateGalleryInternships = async () => {
+  faculty = await getRecords("Internships");
+  faculty = sortByOrder(faculty);
+  let template = "";
+  faculty.forEach((facultyPerson, index) => {
+    template += `
+    <div class="facultyBox">
+      <div
+        class="facultyPic"
+        style="background: url('${facultyPerson.Photo[0].url}') center/cover"
+      ></div>
+      <h2>${facultyPerson.Name}</h2>
+      <p>${facultyPerson.Designation}</p>
+    </div>
+    `;
+  });
+  const facultyRow = document.getElementsByClassName("facultyRow")[0];
+  facultyRow.innerHTML = template;
+};
+
+const updateGalleryVisits = async () => {
+  faculty = await getRecords("Visits");
+  faculty = sortByOrder(faculty);
+  let template = "";
+  faculty.forEach((facultyPerson, index) => {
+    template += `
+    <div class="facultyBox">
+      <div
+        class="facultyPic"
+        style="background: url('${facultyPerson.Photo[0].url}') center/cover"
+      ></div>
+      <h2>${facultyPerson.Name}</h2>
+      <p>${facultyPerson.Designation}</p>
+    </div>
+    `;
+  });
+  const facultyRow = document.getElementsByClassName("facultyRow")[0];
+  facultyRow.innerHTML = template;
+};
+
+const updateGalleryParallelSkills = async () => {
+  faculty = await getRecords("Parallel Skills Lab");
+  faculty = sortByOrder(faculty);
+  let template = "";
+  faculty.forEach((facultyPerson, index) => {
+    template += `
+    <div class="facultyBox">
+      <div
+        class="facultyPic"
+        style="background: url('${facultyPerson.Photo[0].url}') center/cover"
+      ></div>
+      <h2>${facultyPerson.Name}</h2>
+    </div>
+    `;
+  });
+  const facultyRow = document.getElementsByClassName("facultyRow")[0];
+  facultyRow.innerHTML = template;
+};
+
+const updateGallerySsdRiidl = async () => {
+  faculty = await getRecords("SSD + Riidl Collaboration");
+  faculty = sortByOrder(faculty);
+  let template = "";
+  faculty.forEach((facultyPerson, index) => {
+    template += `
+    <div class="facultyBox">
+      <div
+        class="facultyPic"
+        style="background: url('${facultyPerson.Photo[0].url}') center/cover"
+      ></div>
+      <h2>${facultyPerson.Name}</h2>
+      <p>${facultyPerson.Designation}</p>
+    </div>
+    `;
+  });
+  const facultyRow = document.getElementsByClassName("facultyRow")[0];
+  facultyRow.innerHTML = template;
+};
+
+const updateGalleryPartnerships = async () => {
+  faculty = await getRecords("Partnerships");
+  faculty = sortByOrder(faculty);
+  let template = "";
+  faculty.forEach((facultyPerson, index) => {
+    template += `
+    <div class="facultyBox">
+      <div
+        class="facultyPic"
+        style="background: url('${facultyPerson.Photo[0].url}') center/cover"
+      ></div>
+      <h2>${facultyPerson.Name}</h2>
+      <p>${facultyPerson.Designation}</p>
+    </div>
+    `;
+  });
+  const facultyRow = document.getElementsByClassName("facultyRow")[0];
+  facultyRow.innerHTML = template;
+};
+
 
 const updateBoardOfStudies = async () => {
   board = await getRecords("Board of Studies");

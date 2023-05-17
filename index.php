@@ -357,7 +357,7 @@
               <p>Enquire Now</p>
               <img src="./img/shortArrow.svg" alt="Arrow" />
             </a>
-            <a href="https://forms.gle/rqqH6aGMnoXfSY3w5" target="_blank">
+            <a href="https://admissions.somaiya.edu/" target="_blank">
               <p>Apply Now</p>
               <img src="./img/shortArrow.svg" alt="Arrow" />
             </a>
@@ -490,13 +490,15 @@
               <p>Enquire Now</p>
               <img src="./img/shortArrow.svg" alt="Arrow" />
             </a>
-            <a href="https://forms.gle/rqqH6aGMnoXfSY3w5" target="_blank">
+            <a href="https://admissions.somaiya.edu/" target="_blank">
               <p>Apply Now</p>
               <img src="./img/shortArrow.svg" alt="Arrow" />
             </a>
           </div>
         </div>
-        <p id="contactCopyright">&copy; Somaiya School of Design 2021</p>
+        <p id="contactCopyright">&copy; Somaiya School of Design 2023
+</br></br>
+            Somaiya School of Design, Somaiya Vidyavihar University, Vidyavihar (E), Mumbai - 400077</p>
       </div>
       <button onclick="window.scrollTo(0,0)">Top</button>
     </div>
