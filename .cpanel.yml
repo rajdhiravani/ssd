@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home3/riidlorg/public_html/ssd
+    - export DEPLOYPATH=/home/riidlorg/public_html/ssd
     - cp -R * $DEPLOYPATH
