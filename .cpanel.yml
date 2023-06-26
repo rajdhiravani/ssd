@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/riidlorg/public_html/ssd
+    - export DEPLOYPATH=/home/riidlorg/ssd.somaiya.edu
     - cp -R * $DEPLOYPATH
