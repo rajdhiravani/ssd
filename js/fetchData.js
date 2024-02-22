@@ -56,9 +56,9 @@ const getAirtableData = async () => {
   updateBlogs();
   updateBlogPost();
 };
-
+// patk8QeqV2tlHijQm.933dd21e1446b1ae934b02c62f442718fcca497e04502392e090cee52b9db891
 const getRecords = async (tableName) => {
-  let base = new Airtable({ apiKey: "keyiZXGBC4056oZ5W" }).base(
+  let base = new Airtable({ apiKey: "patk8QeqV2tlHijQm.933dd21e1446b1ae934b02c62f442718fcca497e04502392e090cee52b9db891" }).base(
     "appaG38K7Wcc7VPLz"
   );
   const fields = [];
