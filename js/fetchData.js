@@ -32,7 +32,7 @@ let testimonials = [];
 let blogs = [];
 let blog = [];
 
-const personalAccessToken = "patk8QeqV2tlHijQm"
+const personalAccessToken = "patk8QeqV2tlHijQm.933dd21e1446b1ae934b02c62f442718fcca497e04502392e090cee52b9db891"
 
 const getAirtableData = async (personalAccessToken) => {
   updateOrgStructure(personalAccessToken);
