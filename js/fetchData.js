@@ -109,8 +109,8 @@ const updateOrgStructure = async (personalAccessToken) => {
   orgStructureRow.innerHTML = template;
 };
 
-const updateOrgStructureModal = async () => {
-  orgStructure = await getRecords("Organizational Structure");
+const updateOrgStructureModal = async (personalAccessToken) => {
+  orgStructure = await getRecords("Organizational Structure", personalAccessToken);
   orgStructure = sortByOrder(orgStructure);
   let template = "";
   orgStructure.forEach((orgPerson, index) => {
