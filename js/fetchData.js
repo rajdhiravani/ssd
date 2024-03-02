@@ -32,33 +32,35 @@ let testimonials = [];
 let blogs = [];
 let blog = [];
 
-const getAirtableData = async () => {
-  updateOrgStructure();
-  updateOrgStructureModal();
-  updateAdvBoard();
-  updateAdvBoardModal();
-  updateFaculty();
-  updateVisitingFaculty();
-  updateGalleryInternships();
-  updateGalleryVisits();
-  updateGalleryParallelSkills();
-  updateGallerySsdRiidl();
-  updateGalleryPartnerships();
-  updateBoardOfStudies();
-  updatePartners();
-  updateExchangePrograms();
-  updateGrants();
-  updateMedia();
-  updateProductDesign();
-  updateProductDesignModal();
-  updateTestimonials();
-  updateTestimonialsModal();
-  updateBlogs();
-  updateBlogPost();
+const personalAccessToken = "patk8QeqV2tlHijQm"
+
+const getAirtableData = async (personalAccessToken) => {
+  updateOrgStructure(personalAccessToken);
+  updateOrgStructureModal(personalAccessToken);
+  updateAdvBoard(personalAccessToken);
+  updateAdvBoardModal(personalAccessToken);
+  updateFaculty(personalAccessToken);
+  updateVisitingFaculty(personalAccessToken);
+  updateGalleryInternships(personalAccessToken);
+  updateGalleryVisits(personalAccessToken);
+  updateGalleryParallelSkills(personalAccessToken);
+  updateGallerySsdRiidl(personalAccessToken);
+  updateGalleryPartnerships(personalAccessToken);
+  updateBoardOfStudies(personalAccessToken);
+  updatePartners(personalAccessToken);
+  updateExchangePrograms(personalAccessToken);
+  updateGrants(personalAccessToken);
+  updateMedia(personalAccessToken);
+  updateProductDesign(personalAccessToken);
+  updateProductDesignModal(personalAccessToken);
+  updateTestimonials(personalAccessToken);
+  updateTestimonialsModal(personalAccessToken);
+  updateBlogs(personalAccessToken);
+  updateBlogPost(personalAccessToken);
 };
 // patk8QeqV2tlHijQm.933dd21e1446b1ae934b02c62f442718fcca497e04502392e090cee52b9db891
-const getRecords = async (tableName) => {
-  let base = new Airtable({ apiKey: "patk8QeqV2tlHijQm" }).base(
+const getRecords = async (tableName, personalAccessToken) => {
+  let base = new Airtable({ apiKey: "personalAccessToken" }).base(
     "appaG38K7Wcc7VPLz"
   );
   const fields = [];
@@ -80,8 +82,8 @@ const sortByOrder = (arr) => {
   return temp;
 };
 
-const updateOrgStructure = async () => {
-  orgStructure = await getRecords("Organizational Structure");
+const updateOrgStructure = async (personalAccessToken) => {
+  orgStructure = await getRecords("Organizational Structure", personalAccessToken);
   orgStructure = sortByOrder(orgStructure);
   let template = "";
   orgStructure.forEach((orgPerson, index) => {
